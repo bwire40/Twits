@@ -43,28 +43,10 @@
             <hr>
 
             @foreach($twits as $twit)
-            <div class="mt-3">
-                <div class="row">
-                    <div class="col-3">
-{{--                        --}}
-                    </div>
-                    <div class="col-6">
-
-                        @include('shared.twit_card')
-                    </div>
-                </div>
-
-            </div>
+                @include('shared.twit_card')
+            @endforeach
         </div>
-        @endforeach
-
-
-        <div class="row">
-
-            <div class="col-3">
-                {{--            --}}
-            </div>
-            <div class="col-6">
+        <div class="col-3">
                 <div class="card">
                     <div class="card-header pb-0 border-0">
                         <h5 class="">Search</h5>
@@ -111,8 +93,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        {{--        end of content section--}}
     </div>
+        {{--        end of content section--}}
+
 @endsection
