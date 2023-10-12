@@ -12,14 +12,14 @@ class TwitController extends Controller
     public function store(): RedirectResponse
     {
 
-        //        new database entry
+        // new database entry
         $twit = Twit::create([
             'content' => request()->get('twit', ''),
             'likes' => 20
         ]);
-        //        $twit->save();
+        // $twit->save();
 
-        //        dump(request());
+        // dump(request());
         return redirect()->route('dashboard');
     }
 }

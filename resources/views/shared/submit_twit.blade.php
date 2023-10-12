@@ -3,7 +3,7 @@
 {{-- share twits form --}}
 <div class="row">
     <form action="{{ route('twit.create') }}" method="post">
-        @csrf
+        @csrf {{-- //@crsf prevents csrf attacks --}}
         <div class="mb-3">
             <label for="twit"></label>
             <textarea name="twit" class="form-control" id="twit" rows="3"></textarea>
