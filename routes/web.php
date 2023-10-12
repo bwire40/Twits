@@ -27,7 +27,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/profile', [ProfileController::class, 'profile']);
+
+// post  twit route
 Route::post('/twit', [TwitController::class, 'store'])->name('twit.create');
+// terms route
 Route::get('/terms', function () {
     return view('terms');
 });
